@@ -44,14 +44,18 @@ or gulp to manage development pipelines.
 The build step invokes the TypeScript compiler to create ES5 javascript
 files and source maps from the `.ts` files. Run with:
 
-`npm run build`
+| Unix          | Windows         |
+|---------------|-----------------|
+| npm run build | npm run msbuild |
 
 You can examine the configuration for the TypeScript compiler in `tsconfig.json`.
 The generated files are output in the `built/` folder.
 
 To remove all generated files, run:
 
-`npm run clean`.
+| Unix          | Windows         |
+|---------------|-----------------|
+| npm run clean | npm run clean |
 
 ### Watch
 

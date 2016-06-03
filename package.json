@@ -15,7 +15,12 @@
     "build": "tsc && npm run copy && npm run copytemplates",
     "watch": "tsc --watch",
     "serve": "http-server -p 9090 -c-1",
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    
+    "msclean": "rmdir /s/q built",
+    "mscopy": "xcopy /y src\\*.* built\\",
+    "mscopytemplates": "xcopy /y/s src\\app\\*.html built\\app\\ & xcopy /y/s src\\app\\*.css built\\app\\ ",
+    "msbuild": "tsc && npm run mscopy && npm run mscopytemplates" 
   },
   "dependencies": {
     "@angular/common": "2.0.0-rc.0",
